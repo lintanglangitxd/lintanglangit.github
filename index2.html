@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(167, 241, 212)">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lintang Langit Biru</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal Jumbotron -->
+    <div class="jumbotron text-center py-5">
+      <img src="XD9.jpeg" alt="Lintang" width="300" />
+      <h1 class="display-4">XD</h1>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Awal About -->
+    <div id="about" class="text-center py-5" style="background-color: #aff9f4">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col">
+            <h2>About My Class</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <p>Hallo hari ini kita mau tau tentang kelas XD, kaprodi kami ibu Merysa, kami dikelas suka banget dengerin musik hehe, klo bisa dibilang lumyan rusuh tapi kami main pintar hehe.</p>
+          </div>
+          <div class="col-md-4">
+            <p>Kami ada 31 orang ada banyak hehe, kami kalau pelajaran pemograman dengan ibu minarti sangat senang hehe krna pelajaran favorit kami, apalagi TIK pa widdi hehe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir About -->
+
+    <!-- Awal Gallery -->
+    <div id="gallery" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h2>My Gallery</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="XD.jpeg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">Lintang&XD</h5>
+                <p class="card-text">Teman teman Sekelas Lintang</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-pertama">View Image</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="XD2.jpeg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">XD</h5>
+                <p class="card-text">Pada saat rumah coding datang ke XD</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-kedua">View Image</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-3">
+            <div class="card" style="width: 14rem">
+              <img src="XD3.jpeg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">Pake Batik</h5>
+                <p class="card-text">XD pake batik</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-ketiga">View Image</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="XD4.jpeg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">XD with Ibu Minarti</h5>
+                <p class="card-text">Time selesai belajar pemograman</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-keempat">View Image</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-3">
+            <div class="card" style="width: 17rem">
+              <img src="XD8.jpeg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">Ibu Minarti</h5>
+                <p class="card-text">Guru yang paling sabar buat ngajarin kami</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-kelima">View Image</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Gallery -->
+
+    <!-- Modal Pertama -->
+    <div class="modal fade" id="gambar-pertama" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="XD.jpeg" class="img-thumbnail" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Pertama -->
+
+    <!-- Modal Kedua -->
+    <div class="modal fade" id="gambar-kedua" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="XD2.jpeg" class="img-thumbnail" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Kedua -->
+
+    <!-- Modal Ketiga -->
+    <div class="modal fade" id="gambar-ketiga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="XD3.jpeg" class="img-thumbnail" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Ketiga-->
+
+        <!-- Modal Keempat -->
+        <div class="modal fade" id="gambar-keempat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="XD4.jpeg" class="img-thumbnail" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Akhir Modal Keempat-->
+
+            <!-- Modal Kelima -->
+    <div class="modal fade" id="gambar-kelima" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="XD8.jpeg" class="img-thumbnail" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Kelima-->
+
+    <!-- Footer -->
+    <footer class="py-3" style="background-color: rgb(255, 253, 192)">
+      <div class="container text-center">Created with love by lintang Cantik</div>
+    </footer>
+    <!-- Akhir Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
